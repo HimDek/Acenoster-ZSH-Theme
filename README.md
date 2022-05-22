@@ -8,7 +8,7 @@ A multipurpose ZSH theme with a very detailed git and mercurial prompt.
 
 To test if your terminal and font support it, check that all the necessary characters are supported by copying the following command to your terminal: `echo "\ue0a0 \u263f \u293b \u27a6 \u2213 \u00b1 \u271a \u25b2 \u25bc \u2714 \u25cb \u2699 \u2717"`. The result should look like this:
 
-![Character Example](https://raw.githubusercontent.com/HiDe-Techno-Tips/Acenoster-ZSH-Theme/main/characters.png)
+![Character Example](https://raw.githubusercontent.com/HiDe-Techno-Tips/Acenoster-ZSH-Theme/master/characters.png)
 
 ## What does it show?
 
@@ -28,4 +28,4 @@ To test if your terminal and font support it, check that all the necessary chara
 - '⚙:' No of background tasks if any
 - '✗:' Previous command's exit code if non zero or '○' if zero.
 
-![Screenshot](https://raw.githubusercontent.com/HiDe-Techno-Tips/Acenoster-ZSH-Theme/main/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/HiDe-Techno-Tips/Acenoster-ZSH-Theme/master/screenshot.png)
