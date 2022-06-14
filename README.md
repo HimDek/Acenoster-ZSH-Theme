@@ -10,9 +10,22 @@ A multipurpose ZSH theme.
 
 ![](assets/20220614_183811_Default_Prompt_All.png)
 
-# Compatibility
+# Prerequisites:
 
-You will need to install any one [Nerd font](https://www.nerdfonts.com/font-downloads) and use it in your terminal for this theme to render the icons correctly.
+* An Unix like Operating system like Linux, MacOS, BSD, Android (Termux) etc or WSL (Windows Subsystem for Linux), cygwin or msys if you want to use in Windows.
+* zsh should be installed. See [how to install zsh in various platforms](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms).
+* oh-my-zsh should be installed. See [how to install oh-my-zsh](https://ohmyz.sh/#install).
+* You will need to install any one [Nerd font](https://www.nerdfonts.com) and use it in your terminal for this theme to render the icons correctly.
+  * Download any of the fonts you like from [here](https://www.nerdfonts.com/font-downloads).
+  * Extract the downloaded `.zip` file and copy its contents into a folder in either `\usr\share\fonts` or `~\.local\share\fonts`.
+
+## How to install and use:
+
+* Make sure you are using zsh and execute the below command to install acenoster theme.
+  ```
+  wget http://url.himdek.com/acenoster -O $ZSH/custom/themes/acenoster.zsh-theme
+  ```
+* Enable acenoster theme by editing the `~/.zshrc` file. In that file, change the line containing `ZSH_THEME="SomeName"` to `ZSH_THEME="acenoster"`.
 
 ## What does it show?
 
@@ -20,7 +33,7 @@ The following tables show which information are shown in the prompt in sequentia
 
 * \* denotes visible only when applicable.
 * The corresponding oh-my-zsh plugin needs to be enabled in order for its info to be shown.
-* To disable an info, either disable its corresponding oh-my-zsh plugin, set its corresponding toggle variable to `0` or unset its corresponding format specifier variable.
+* To disable an info, either disable its corresponding oh-my-zsh plugin, set its corresponding toggle variable to `0` or unset its corresponding format specifier variable. See [how to enable or disable oh-my-zsh plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins).
 * The default values of toggle and format specifier variables with additional information are given [further down](#info-toggles-set-to-0-for-off-1-for-on).
 
 ### Left pre prompt:
