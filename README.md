@@ -32,6 +32,7 @@ A multipurpose ZSH theme.
 The following tables show which information are shown in the prompt in sequential order.
 
 * \* denotes visible only when applicable.
+* \*\* indicates disabled by default.
 * The corresponding oh-my-zsh plugin needs to be enabled in order for its info to be shown.
 * To disable an info, either disable its corresponding oh-my-zsh plugin, set its corresponding toggle variable to `0` or unset its corresponding format specifier variable. See [how to enable or disable oh-my-zsh plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins).
 * The default values of toggle and format specifier variables with additional information are given [further down](#info-toggles-set-to-0-for-off-1-for-on).
@@ -76,7 +77,7 @@ The following tables show which information are shown in the prompt in sequentia
     <td></td>
   </tr>
   <tr>
-    <td>*Mercurial branch, tracking and local status</td>
+    <td>** *Mercurial branch, tracking and local status</td>
     <td></td>
     <td>ZSH_THEME_ACENOSTER_SHOW_HG_PROMPT</td>
     <td></td>
@@ -96,7 +97,7 @@ The following tables show which information are shown in the prompt in sequentia
     <th>Info</th>
     <th>oh-my-zsh plugin</th>
     <th>Toggle variable</th>
-    <th>Format specifier variable</th>
+<th>Format specifier variable</th>
   </tr>
   <tr>
     <td>*Battery percentage and status</td>
@@ -135,12 +136,23 @@ The following tables show which information are shown in the prompt in sequentia
 <table>
   <tr>
     <th>Info</th>
-  </tr>
+    <th>oh-my-zsh plugin</th>
+    <th>Toggle variable</th>
+ </tr>
   <tr>
     <td>*Number of background processes</td>
+    <td></td>
+    <td>ZSH_THEME_ACENOSTER_SHOW_BACK_JOBS</td>
   </tr>
   <tr>
-    <td>*Last command error code</td>
+    <td>*Last command return value</td>
+    <td></td>
+    <td>ZSH_THEME_ACENOSTER_SHOW_LAST_RETURN</td>
+  </tr>
+  <tr>
+    <td>*Vi normal mode indicator</td>
+    <td>vi-mode</td>
+    <td>ZSH_THEME_ACENOSTER_SHOW_VI_MODE</td>
   </tr>
 </table>
 
@@ -153,26 +165,32 @@ Below are the default values of environment variables used by this prompt. To cu
 ```
   ZSH_THEME_ACENOSTER_ALWAYS_SHOW_USER=1
   ZSH_THEME_ACENOSTER_ALWAYS_SHOW_HOST=1
-  ZSH_THEME_ACENOSTER_SHOW_HG_PROMPT=1
+  ZSH_THEME_ACENOSTER_SHOW_HG_PROMPT=0
   ZSH_THEME_ACENOSTER_SHOW_BATTERY=1
   ZSH_THEME_ACENOSTER_SHOW_TIMER=1
+  ZSH_THEME_ACENOSTER_SHOW_BACK_JOBS=1
+  ZSH_THEME_ACENOSTER_SHOW_LAST_RETURN=1
+  ZSH_THEME_ACENOSTER_SHOW_VI_MODE=1
 ```
 
 * See [this](#what-does-it-show) to know which is what.
 * Turning off `ZSH_THEME_ACENOSTER_ALWAYS_SHOW_USER` which is on by default will hide the user name unless it is root or in an SSH shell.
 * Turning off `ZSH_THEME_ACENOSTER_ALWAYS_SHOW_HOST` which is on by default will hide the host name unless it is in an SSH shell.
-* Turning off `ZSH_THEME_ACENOSTER_SHOW_HG_PROMPT` which is on by default will disable the [mercurial](https://www.mercurial-scm.org/) info of the prompt. Mercurial is a SCM (Source Control Management) tool just like git. Although not as popular as git, it is still used in many projects.
+* Turning on `ZSH_THEME_ACENOSTER_SHOW_HG_PROMPT` which is off by default will enable the [mercurial](https://www.mercurial-scm.org/) info of the prompt. Mercurial is a SCM (Source Control Management) tool just like git. Although not as popular as git, it is still used in many projects.
 * `ZSH_THEME_ACENOSTER_SHOW_BATTERY` which is on by default is the toggle for the battery capacity icon and percentage in the prompt.
 * `ZSH_THEME_ACENOSTER_SHOW_TIMER` which is on by default is the toggle for the timer that shows the time taken by the previous command run in the terminal.
+* `ZSH_THEME_ACENOSTER_SHOW_VI_MODE` which is on by default is the toggle for the Vi normal mode inicator
+* `ZSH_THEME_ACENOSTER_SHOW_BACK_JOBS` which is on by default is the toggle for the indicator that shows if any background process is running in the current terminal.
+* `ZSH_THEME_ACENOSTER_SHOW_LAST_RETURN` which is on by default is the toggle for the indicator that shows if the last command exited with a non zero return value. 
 
 ### Info Format specifiers:
 
 ```
   ZSH_THEME_ACENOSTER_USER_PROMPT_FORMAT="%n"
   ZSH_THEME_ACENOSTER_HOST_PROMPT_FORMAT="%m"
-  ZSH_THEME_ACENOSTER_DIR_PROMPT_FORMAT="\"%d\""
-  ZSH_THEME_ACENOSTER_CLOCK_PROMPT_TIME_FORMAT="%I:%M:%S %P"
-  ZSH_THEME_ACENOSTER_CALENDAR_PROMPT_DATE_FORMAT="%a %b %d, %Y"
+  ZSH_THEME_ACENOSTER_DIR_PROMPT_FORMAT="%~"
+  ZSH_THEME_ACENOSTER_CLOCK_PROMPT_TIME_FORMAT="%I:%M %P"
+  ZSH_THEME_ACENOSTER_CALENDAR_PROMPT_DATE_FORMAT="%a %b %d"
 ```
 
 * See [this](#what-does-it-show) to know which is what.
@@ -183,13 +201,11 @@ Below are the default values of environment variables used by this prompt. To cu
 ```
   ZSH_THEME_ACENOSTER_FLUENT_FLOW=1
   ZSH_THEME_ACENOSTER_LESS_ICONS=0
-  ZSH_THEME_ACENOSTER_FOLLOW_COLOR_SCHEME=1
   ZSH_THEME_ACENOSTER_COMPACT=0
 ```
 
 * Enabling `ZSH_THEME_ACENOSTER_FLUENT_FLOW` which is enabled by default shows the connecting words like `at`, `in`, `took`, `on` etc in a dull color between different parts of the prompt to make them seem connected and unified while not being too intrusive.
 * Enabling `ZSH_THEME_ACENOSTER_LESS_ICONS`, which is disabled by default will show only those icons in the prompt that indicate a status.
-* Enabling `ZSH_THEME_ACENOSTER_FOLLOW_COLOR_SCHEME` which is enabled by default will make the prompt follow the color scheme set in the terminal app. Otherwise, the colors set in [these](#the-following-will-be-followed-only-if-zshthemeacenosterfollowcolorscheme--0) variables will be followed.
 * Enabling `ZSH_THEME_ACENOSTER_COMPACT` which is disabled by default will remove the empty line before every prompt.
 
 ### Battery levels:
@@ -207,21 +223,16 @@ Below are the default values of environment variables used by this prompt. To cu
   COLOR_GIT="%{$FG[203]%}"            # Used by the git icon and branch name text.
   COLOR_HG="%{$FG[244]%}"             # Used by the mercurial icon and branch name text.
   COLOR_BATTERY_FULL="%{$FG[040]%}"   # Used by the battery full icon and "100%" text.
+  COLOR_BATTERY_NORMAL="%{$fg[cyan]%}"
+  COLOR_DULL="%{$fg[black]%}"
+  COLOR_RED="%{$fg[red]%}"
+  COLOR_GREEN="%{$fg[green]%}"
+  COLOR_BLUE="%{$fg[blue]%}"
+  COLOR_YELLOW="%{$fg[yellow]%}"
+  COLOR_RESET="%{$reset_color%}"
 ```
-
-#### The following will be followed only if `ZSH_THEME_ACENOSTER_FOLLOW_COLOR_SCHEME` is disabled
-
-```
-  COLOR_BATTERY_NORMAL="%{$FG[036]%}"
-  COLOR_DULL="%{$FG[239]%}"
-  COLOR_RED="%{$FG[009]%}"
-  COLOR_GREEN="%{$FG[047]%}"
-  COLOR_BLUE="%{$FG[051]%}"
-  COLOR_YELLOW="%{$FG[226]%}"
-```
-
-* `COLOR_BATTERY_NORMAL` is the color used by the battery icon and percentage text when it is between the values of `ZSH_THEME_ACENOSTER_BATTERY_HIGH` and `ZSH_THEME_ACENOSTER_BATTERY_LOW` as set in [Battery levels](#battery-levels) section. This color is cyan when `ZSH_THEME_ACENOSTER_FOLLOW_COLOR_SCHEME` is enabled
-* `COLOR_DULL` is the color used by the connecting words like `at`, `in`, `took`, `on` etc shown between different parts of the prompt when `ZSH_THEME_ACENOSTER_FLUENT_FLOW` is enabled as described [here](#settings-set-to-0-to-disable-1-to-enable). This color is black when `ZSH_THEME_ACENOSTER_FOLLOW_COLOR_SCHEME` is enabled
+* `COLOR_BATTERY_NORMAL` is the color used by the battery icon and percentage text when it is between the values of `ZSH_THEME_ACENOSTER_BATTERY_HIGH` and `ZSH_THEME_ACENOSTER_BATTERY_LOW` as set in [Battery levels](#battery-levels) section.
+* `COLOR_DULL` is the color used by the connecting words like `at`, `in`, `took`, `on` etc shown between different parts of the prompt when `ZSH_THEME_ACENOSTER_FLUENT_FLOW` is enabled as described [here](#settings-set-to-0-to-disable-1-to-enable).
 * Other colors are used by several parts of the prompt to indicate different states in general.
 
 ## Screenshots:
