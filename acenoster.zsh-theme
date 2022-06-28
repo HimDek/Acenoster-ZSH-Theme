@@ -2,6 +2,8 @@
 # Much of the original codebase was copied from oh-my-zsh's agnoster theme (https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/agnoster.zsh-theme) and other oh-my-zsh themes and plugins.
 # Visually simillar to oh-my-zsh's fino theme (https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/fino.zsh-theme)
 
+  TERMINAL=$(basename "/"$(ps -o cmd -f -p $(cat /proc/$(echo $$)/stat | cut -d \  -f 4) | tail -1 | sed 's/ .*$//'))
+
 # Toggles: Set to 0 for off, 1 for on.
   ZSH_THEME_ACENOSTER_ALWAYS_SHOW_USER=1
   ZSH_THEME_ACENOSTER_ALWAYS_SHOW_HOST=1
@@ -26,7 +28,6 @@
 # Icons:
 # Runs before every prompt
 acenoster_update_icons () {
-  TERMINAL=$(basename "/"$(ps -o cmd -f -p $(cat /proc/$(echo $$)/stat | cut -d \  -f 4) | tail -1 | sed 's/ .*$//'))
   if [[ $TERMINAL = "login" ]]; then
     # Since tty can not display emoticon icons, some essential icons are replaced with legacy characters for it.
     AT_ICON="@"
@@ -115,7 +116,7 @@ acenoster_update_icons () {
   ZSH_THEME_ACENOSTER_HOST_PROMPT_FORMAT="%m"
   ZSH_THEME_ACENOSTER_DIR_PROMPT_FORMAT="%~"
   ZSH_THEME_ACENOSTER_CLOCK_PROMPT_TIME_FORMAT="%I:%M %P"
-  ZSH_THEME_ACENOSTER_CALENDAR_PROMPT_DATE_FORMAT="%a %b %d"
+  ZSH_THEME_ACENOSTER_CALENDAR_PROMPT_DATE_FORMAT="%a %d %b"
 
 # Appearance:
   acenoster_update_icons
@@ -404,8 +405,8 @@ acenoster_prompt_exit_code () {
 
 # Vi mode indicator
 acenoster_prompt_vi_mode () {
-  [[ $ZSH_THEME_ACENOSTER_SHOW_VI_MODE -eq 0 ]] && return
-  [[ $(type vi_mode_prompt_info > /dev/null) -ne 0 ]] && return
+  [[ $ZSH_THEME_ACENOSTER_SHOW_VI_MODE -eq 0 ]] && echo "$COLOR_RESET$ZSH_THEME_ACENOSTER_STRING_PROMPT$COLOR_RESET" && return
+  [[ $(type vi_mode_prompt_info > /dev/null) -ne 0 ]] && echo "$COLOR_RESET$ZSH_THEME_ACENOSTER_STRING_PROMPT$COLOR_RESET" && return
   echo "$COLOR_RESET$ZSH_THEME_ACENOSTER_VI_MODE_PROMPT_PREFIX$COLOR_RESET$(vi_mode_prompt_info)$COLOR_RESET$ZSH_THEME_ACENOSTER_VI_MODE_PROMPT_SUFIX$COLOR_RESET"
 }
 

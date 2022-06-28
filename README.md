@@ -21,11 +21,18 @@ A multipurpose ZSH theme.
 
 ## How to install and use:
 
-* Make sure you are using zsh and execute the below command to install acenoster theme.
-  ```
-  wget http://url.himdek.com/acenoster -O $ZSH/custom/themes/acenoster.zsh-theme
-  ```
-* Enable acenoster theme by editing the `~/.zshrc` file. In that file, change the line containing `ZSH_THEME="SomeName"` to `ZSH_THEME="acenoster"`.
+* Make sure you are using zsh and execute any one of the following commands given below to install the acenoster theme.
+
+  * using git
+    ```
+    git clone https://github.com/HimDek/Acenoster-ZSH-Theme.git $ZSH/custom/themes/acenoster
+    ```
+  * using wget
+    ```
+    wget http://url.himdek.com/acenostertheme -O $ZSH/custom/themes/acenoster/acenoster.zsh-theme
+    ```
+
+* Enable acenoster theme by editing the `~/.zshrc` file. In that file, change the line containing `ZSH_THEME="SomeName"` to `ZSH_THEME="acenoster/acenoster"`.
 
 ## What does it show?
 
