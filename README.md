@@ -255,7 +255,7 @@ Below are the default values of environment variables used by this prompt. To cu
 * `COLOR_DULL` is the color used by the connecting words like `at`, `in`, `took`, `on` etc shown between different parts of the prompt when `ZSH_THEME_ACENOSTER_FLUENT_FLOW` is enabled as described [here](#settings-set-to-0-to-disable-1-to-enable).
 * Other colors are used by several parts of the prompt to indicate different states in general.
 
-<h1 align="center">Gallery</h1>
+<h1 id="gallery" align="center">Gallery</h1>
 
 <p align="center">
 <img alt="Full_Default_Prompt" src="assets/20220614_182453_Full_Default_Prompt.png">
