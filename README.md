@@ -1,14 +1,27 @@
-# acenoster.zsh-theme
+<p align="center">
+ <h1 align="center">acenoster.zsh-theme</h1>
+ <p align="center">A multipurpose ZSH theme</p>
+</p>
 
-A multipurpose ZSH theme.
+<p class="buttons" align="center">
+  <a href="#prerequisites"><img src="https://img.shields.io/badge/Install-green?style=for-the-badge" /></a>
+  <a href="#gallery"><img src="https://img.shields.io/badge/View%20Screenshots-blueviolet?style=for-the-badge" /></a>
+  <a href="#what-does-it-show"><img src="https://img.shields.io/badge/Features-blue?style=for-the-badge" /></a>
+</p>
 
-**Example prompt when at home directory:**
+<p align="center"><img src="assets/20220614_170518_Default_Prompt.png" /></p>
 
-![Default appearance](assets/20220614_170518_Default_Prompt.png)
+<p class="buttons" align="center">
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/HimDek/Acenoster-ZSH-Theme?style=flat-square"></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/himdek/Acenoster-ZSH-Theme?style=flat-square"></a>
+ <a href="https://himdek.com/Acenoster-ZSH-Theme/"><img class="invisible" src="https://img.shields.io/badge/himdek.com-View%20in%20Website-blue?style=flat-square&logo=Internet-Explorer&color=blue" /></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/blob/master/LICENSE.md"><img alt="GitHub license" src="https://img.shields.io/github/license/HimDek/Acenoster-ZSH-Theme?style=flat-square"></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/"><img src="https://img.shields.io/badge/GitHub-View%20sourcecode-blue?style=flat-square&logo=github&color=blueviolet" /></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/HimDek/Acenoster-ZSH-Theme?style=flat-square"></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/HimDek/Acenoster-ZSH-Theme?style=flat-square"></a>
+</p>
 
-**Example showing all information possible in a single prompt:**
-
-![](assets/20220614_183811_Default_Prompt_All.png)
+<p align="center"><img src="assets/20220614_183811_Default_Prompt_All.png" />
 
 # Prerequisites:
 
@@ -242,12 +255,18 @@ Below are the default values of environment variables used by this prompt. To cu
 * `COLOR_DULL` is the color used by the connecting words like `at`, `in`, `took`, `on` etc shown between different parts of the prompt when `ZSH_THEME_ACENOSTER_FLUENT_FLOW` is enabled as described [here](#settings-set-to-0-to-disable-1-to-enable).
 * Other colors are used by several parts of the prompt to indicate different states in general.
 
-## Screenshots:
+<h1 align="center">Gallery</h1>
 
-**Default prompt showing all possible information:**
+<p align="center">
+<img alt="Full_Default_Prompt" src="assets/20220614_182453_Full_Default_Prompt.png">
+</p>
+<p align="center">
+▲ Default prompt showing all possible information
+</p>
 
-![Full_Default_Prompt](assets/20220614_182453_Full_Default_Prompt.png)
-
-**Same as above but with `ZSH_THEME_ACENOSTER_LESS_ICONS` turned on:**
-
-![Full_Less_Icons_Prompt](assets/20220614_182501_Full_Less_Icons_Prompt.png)
+<p align="center">
+<img alt="Full_Default_Prompt" src="assets/20220614_182501_Full_Less_Icons_Prompt.png">
+</p>
+<p align="center">
+▲ Same as above but with <code>ZSH_THEME_ACENOSTER_LESS_ICONS</code> turned on:
+</p>
