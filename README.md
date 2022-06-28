@@ -23,7 +23,9 @@
 
 <p align="center"><img src="assets/20220614_183811_Default_Prompt_All.png" />
 
-# Prerequisites:
+<br />
+
+## Prerequisites:
 
 * An Unix like Operating system like Linux, MacOS, BSD, Android (Termux) etc or WSL (Windows Subsystem for Linux), cygwin or msys if you want to use in Windows.
 * zsh should be installed. See [how to install zsh in various platforms](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms).
@@ -32,7 +34,7 @@
   * Download any of the fonts you like from [here](https://www.nerdfonts.com/font-downloads).
   * Extract the downloaded `.zip` file and copy its contents into a folder in either `\usr\share\fonts` or `~\.local\share\fonts`.
 
-## How to install and use:
+### How to install and use:
 
 * Make sure you are using zsh and execute any one of the following commands given below to install the acenoster theme.
 
@@ -46,6 +48,8 @@
     ```
 
 * Enable acenoster theme by editing the `~/.zshrc` file. In that file, change the line containing `ZSH_THEME="SomeName"` to `ZSH_THEME="acenoster/acenoster"`.
+
+<br />
 
 ## What does it show?
 
@@ -176,6 +180,8 @@ The following tables show which information are shown in the prompt in sequentia
   </tr>
 </table>
 
+<br />
+
 ## Environment variables:
 
 Below are the default values of environment variables used by this prompt. To customize any of them, unset or set a new value in the `~/.zshrc` file.
@@ -254,6 +260,8 @@ Below are the default values of environment variables used by this prompt. To cu
 * `COLOR_BATTERY_NORMAL` is the color used by the battery icon and percentage text when it is between the values of `ZSH_THEME_ACENOSTER_BATTERY_HIGH` and `ZSH_THEME_ACENOSTER_BATTERY_LOW` as set in [Battery levels](#battery-levels) section.
 * `COLOR_DULL` is the color used by the connecting words like `at`, `in`, `took`, `on` etc shown between different parts of the prompt when `ZSH_THEME_ACENOSTER_FLUENT_FLOW` is enabled as described [here](#settings-set-to-0-to-disable-1-to-enable).
 * Other colors are used by several parts of the prompt to indicate different states in general.
+
+<br />
 
 <h1 id="gallery" align="center">Gallery</h1>
 
