@@ -5,20 +5,22 @@
 
 <p class="buttons" align="center">
   <a href="#prerequisites"><img src="https://img.shields.io/badge/Install-green?style=for-the-badge" /></a>
-  <a href="#gallery"><img src="https://img.shields.io/badge/View%20Screenshots-blueviolet?style=for-the-badge" /></a>
   <a href="#what-does-it-show"><img src="https://img.shields.io/badge/Features-blue?style=for-the-badge" /></a>
+  <a href="https://himdek.com/Acenoster-ZSH-Theme/"><img class="invisible" src="https://img.shields.io/badge/himdek.com-View%20in%20Website-blue?style=for-the-badge&logo=Internet-Explorer&color=blue" /></a>
+  <a href="https://himdek.com/?tab=donate"><img src="https://img.shields.io/badge/Donate-Support%20me-green?style=for-the-badge&logo=Razorpay" /></a>
+  <a href="#gallery"><img src="https://img.shields.io/badge/View%20Screenshots-blueviolet?style=for-the-badge" /></a>
 </p>
 
 <p align="center"><img src="assets/20220614_170518_Default_Prompt.png" /></p>
 
 <p class="buttons" align="center">
- <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/HimDek/Acenoster-ZSH-Theme?style=flat-square"></a>
- <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/himdek/Acenoster-ZSH-Theme?style=flat-square"></a>
- <a href="https://himdek.com/Acenoster-ZSH-Theme/"><img class="invisible" src="https://img.shields.io/badge/himdek.com-View%20in%20Website-blue?style=flat-square&logo=Internet-Explorer&color=blue" /></a>
- <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/HimDek/Acenoster-ZSH-Theme?style=flat-square"></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/HimDek/Acenoster-ZSH-Theme?style=flat-square&label=Issues" /></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/himdek/Acenoster-ZSH-Theme?style=flat-square&label=Pull%20requests" /></a>
  <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/"><img src="https://img.shields.io/badge/GitHub-View%20sourcecode-blue?style=flat-square&logo=github&color=blueviolet" /></a>
- <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/HimDek/Acenoster-ZSH-Theme?style=flat-square"></a>
- <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/HimDek/Acenoster-ZSH-Theme?style=flat-square"></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/HimDek/Acenoster-ZSH-Theme?style=flat-square&label=License" /></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/actions/workflows/pages/pages-build-deployment/"><img src="https://img.shields.io/github/deployments/HimDek/Acenoster-ZSH-Theme/github-pages?label=WebPage%20build%20status&logo=InternetExplorer&style=flat-square" /></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/HimDek/Acenoster-ZSH-Theme?style=flat-square&label=Forks" /></a>
+ <a href="https://github.com/HimDek/Acenoster-ZSH-Theme/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/HimDek/Acenoster-ZSH-Theme?style=flat-square&label=Stars" /></a>
 </p>
 
 <p align="center"><img src="assets/20220614_183811_Default_Prompt_All.png" />
