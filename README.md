@@ -1,5 +1,5 @@
 <p align="center">
- <h1 align="center">acenoster.zsh-theme</h1>
+ <a href="https://himdek.com/Acenoster-ZSH-Theme/"><h1 align="center">acenoster.zsh-theme</h1></a>
  <p align="center">A multipurpose ZSH theme</p>
 </p>
 
