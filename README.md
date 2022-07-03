@@ -46,7 +46,7 @@
     ```
   * using wget
     ```
-    wget http://url.himdek.com/acenostertheme -O $ZSH/custom/themes/acenoster/acenoster.zsh-theme
+    wget https://raw.githubusercontent.com/HimDek/Acenoster-ZSH-Theme/master/acenoster.zsh-theme -O $ZSH/custom/themes/acenoster/acenoster.zsh-theme
     ```
 
 * Enable acenoster theme by editing the `~/.zshrc` file. In that file, change the line containing `ZSH_THEME="SomeName"` to `ZSH_THEME="acenoster/acenoster"`.
