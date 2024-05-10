@@ -315,7 +315,7 @@ acenoster_prompt_battery () {
   [[ $ZSH_THEME_ACENOSTER_SHOW_BATTERY -eq 0 ]] && return
   (( $+commands[acpi] )) || return
   if [[ $OSTYPE = linux* ]]; then
-    local out col="$COLOR_BATTERY_NORMAL" bat=$( upower -i $(upower -e | grep BAT) | grep "percentage" | grep -o "[0-9]*%" | grep -o "[0-9]*" )
+    local out col="$COLOR_BATTERY_NORMAL" bat=$(echo $(echo -e "$(upower -i $(upower -e | grep BAT) | grep "percentage" | grep -o "[0-9]*.[0-9]*%")\b ") | awk '{print int($1 + 0.5)}')
     if [[ "$(upower -i $(upower -e | grep BAT) | grep "state" | grep -o "discharging")" != "discharging" ]]; then
       out="$COLOR_YELLOW$SHOCK_ICON$COLOR_RESET"
       if [[ $bat -ge $ZSH_THEME_ACENOSTER_BATTERY_HIGH ]]; then
