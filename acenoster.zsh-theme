@@ -62,17 +62,17 @@ acenoster_update_icons () {
     : ${DOWN_ICON="\uf0ab"}
     : ${UP_ICON="\uf0aa"}
 
-    : ${BATTERY_100_ICON="\uf240 "}
-    : ${BATTERY_90_ICON="\uf241 "}
-    : ${BATTERY_80_ICON="\uf241 "}
-    : ${BATTERY_70_ICON="\uf241 "}
-    : ${BATTERY_60_ICON="\uf242 "}
-    : ${BATTERY_50_ICON="\uf242 "}
-    : ${BATTERY_40_ICON="\uf242 "}
-    : ${BATTERY_30_ICON="\uf243 "}
-    : ${BATTERY_20_ICON="\uf243 "}
-    : ${BATTERY_10_ICON="\uf244 "}
-    : ${BATTERY_0_ICON="\uf244 "}
+    : ${BATTERY_100_ICON="󰁹 "}
+    : ${BATTERY_90_ICON="󰂂 "}
+    : ${BATTERY_80_ICON="󰂁 "}
+    : ${BATTERY_70_ICON="󰁿 "}
+    : ${BATTERY_60_ICON="󰁿 "}
+    : ${BATTERY_50_ICON="󰁾 "}
+    : ${BATTERY_40_ICON="󰁽 "}
+    : ${BATTERY_30_ICON="󰁼 "}
+    : ${BATTERY_20_ICON="󰁻 "}
+    : ${BATTERY_10_ICON="󰁺 "}
+    : ${BATTERY_0_ICON="󰂎 "}
     : ${SHOCK_ICON="\uf0e7 "}
 
     : ${GEAR_ICON="\uf013"}
