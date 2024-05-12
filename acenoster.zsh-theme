@@ -88,7 +88,7 @@ acenoster_update_icons () {
     : ${HOST_ICON="\uf108 "}
     : ${DIR_ICON="\uf4d4 "}
 
-    : ${GIT_ICON="\e702 "}
+    : ${GIT_ICON=" "}
     : ${HG_ICON="\uf223 "}
 
     : ${EXE_TIME_ICON="\uf2f2 "}
@@ -438,9 +438,9 @@ precmd () {
 }
 
 get_space () {
-  local str=$(echo -e $1$2 | sed "s/$(echo -e "\e")[^m]*m//g")
+  local str=$(echo $1$2 | sed 's/\x1B[@A-Z\\\]^_]\|\x1B\[[0-9:;<=>?]*[-!"#$%&'"'"'()*+,.\/]*[][\\@A-Z^_`a-z{|}~]//g')
   local len=${#str}
-  local spaces=$(( COLUMNS - len -1))
+  local spaces=$((COLUMNS-len))
   [[ spaces -le 0 ]] && return
   printf ' %.0s' {1..$spaces}
 }
