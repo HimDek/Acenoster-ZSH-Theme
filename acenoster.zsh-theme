@@ -241,7 +241,7 @@ acenoster_prompt_host () {
 
 # AWS Profile
 acenoster_aws_prompt_info () {
-  [[ $(type aws_prompt_info > /dev/null) -ne 0 ]] && return
+  ! type aws_prompt_info > /dev/null && return
   echo "$COLOR_RESET$(aws_prompt_info)$COLOR_RESET"
 }
 
@@ -253,7 +253,7 @@ acenoster_prompt_dir () {
 
 # git branch, tracking and local status
 acenoster_git_super_status () {
-  [[ $(type git_super_status > /dev/null) -ne 0 ]] && return
+  ! type git_super_status > /dev/null && return
   echo "$COLOR_RESET$(git_super_status)$COLOR_RESET"
 }
 
@@ -306,7 +306,7 @@ acenoster_prompt_hg () {
 
 # Virtual environment name
 acenoster_virtualenv_prompt_info () {
-  [[ $(type virtualenv_prompt_info > /dev/null) -ne 0 ]] && return
+  ! type virtualenv_prompt_info > /dev/null && return
   echo "$COLOR_RESET$(virtualenv_prompt_info)$COLOR_RESET"
 }
 
@@ -371,7 +371,7 @@ acenoster_prompt_timer () {
 
 # Emoji clock
 acenoster_emoji-clock () {
-  [[ $(type emoji-clock > /dev/null) -ne 0 ]] && return
+  ! type emoji-clock > /dev/null && return
   echo "$COLOR_RESET$ZSH_THEME_ACENOSTER_EMOJI_CLOCK_PROMPT_PREFIX$(emoji-clock)$COLOR_RESET$ZSH_THEME_ACENOSTER_EMOJI_CLOCK_PROMPT_SUFFIX$COLOR_RESET"
 }
 
@@ -406,7 +406,7 @@ acenoster_prompt_exit_code () {
 # Vi mode indicator
 acenoster_prompt_vi_mode () {
   [[ $ZSH_THEME_ACENOSTER_SHOW_VI_MODE -eq 0 ]] && echo "$COLOR_RESET$ZSH_THEME_ACENOSTER_STRING_PROMPT$COLOR_RESET" && return
-  [[ $(type vi_mode_prompt_info > /dev/null) -ne 0 ]] && echo "$COLOR_RESET$ZSH_THEME_ACENOSTER_STRING_PROMPT$COLOR_RESET" && return
+  ! type vi_mode_prompt_info > /dev/null && echo "$COLOR_RESET$ZSH_THEME_ACENOSTER_STRING_PROMPT$COLOR_RESET" && return
   echo "$COLOR_RESET$ZSH_THEME_ACENOSTER_VI_MODE_PROMPT_PREFIX$COLOR_RESET$(vi_mode_prompt_info)$COLOR_RESET$ZSH_THEME_ACENOSTER_VI_MODE_PROMPT_SUFIX$COLOR_RESET"
 }
 
